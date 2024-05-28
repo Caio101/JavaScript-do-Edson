@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Aula 3- Atividade</title>
+</head>
+
+<body>
+    <h1>Aula 3 - Atividade</h1>
+    <p>Criar um altoritmo em Javascript que solicita do usuário seu nome e o ano de nascimento. Com as informações
+        calcule sua idade e exiba na tela do corpo do HTML a Mensagem: "Olá Edson, você tem 41 anos e pode dirigir",
+        caso contrário não pode dirigir.</p>
+    <hr>
+    <script>
+        //Solicitar o nome de usuario e o nascimento
+        let name = prompt("Digite seu Nome");
+        let nascimento = prompt("Ano de Nascimento");
+
+        //Calcular a idade
+        let idade = 2024 - parseInt(nascimento);
+
+        if (idade >= 18) {
+            document.write(`Olá ${name} você tem ${idade} e pode dirigir`);
+        }
+        else {
+            document.write(`Olá ${name} você tem ${idade} e não pode dirigir`);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
