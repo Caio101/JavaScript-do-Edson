@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <h1>Aula 04 de Atividade de Estrutura Condicional</h1>
+    <p>Criar um programa em JS que solicita o usuario dois numeros e uma operação aritmética (soma, subtração,
+    multiplicação ou divisão). O programa deve realizar a operação solicitada e exibir o resultado, utilizando
+    estruturas condicionais para determinar qual operação executar.</p>
+    <hr>
+    <script>
+        let numero1 = parseFloat(prompt('Digite o primeiro número:'))
+        let numero2 = parseFloat(prompt('Digite o segundo número:'))
+        let operacao = parseFloat(prompt('Escolha uma operação (1 Soma, 2 Subtração, 3 Multiplicação ou 4 Divisão)'))
+
+        if (operacao === 1) {
+            let operacao1 = numero1 + numero2
+            document.write(`Soma: ${operacao1}`)
+        } else if (operacao === 2) {
+            let operacao2 = numero1 - numero2
+            document.write(`Subtração: ${operacao2}`)
+        } else if (operacao === 3) {
+            let operacao3 = numero1 * numero2
+            document.write(`Multiplicação: ${operacao3}`)
+        } else if (operacao === 4) {
+            let operacao4 = numero1 / numero2
+            document.write(`Divisão: ${operacao4}`)
+        } else {
+            document.write(`A equação está inválida`)
+        }
+    </script>
+
+</body>
+
+</html>
