@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <title>Laços de Repetição - Atividade</title>
+    <p>Crie uma programa que solicite qual a tabuada que será imprensa na tela.</p>
+    <hr>
+    <script>
+
+        let tabuadas = parseInt(prompt("Solicite uma das tabuada você quer (2 até o 10)"));
+
+        let contador = 0
+
+        while (contador <= 10) {
+            let resultadodaTabuada = tabuadas * contador
+            document.write(`${tabuadas} x ${contador} = ${resultadodaTabuada}<br>`)
+            contador++
+        }
+    </script>
+</body>
+
+</html>
