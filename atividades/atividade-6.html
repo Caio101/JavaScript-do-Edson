@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Atividade 6 - Fatorial</title>
+</head>
+
+<body>
+    <h1>Fatorial</h1>
+    <p> Crie um programa que calcula o fatorial de um número fornecido pelo usuário</p>
+    <hr>
+    <script>
+        let num = parseInt(prompt('Insira um numero'))
+        let contador = 1
+ 
+        while (num > 1) {
+            contador = contador * num;
+            num--;
+        }
+        document.write(`${contador}`)
+    </script>
+
+</html>

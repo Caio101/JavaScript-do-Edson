@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Atividade 7 - Numeros Pares</title>
+</head>
+
+<body>
+    <h1>Numeros Pares</h1>
+    <p>Crie um programa que solicita ao usuário um número e conta quantos números pares existem de 1 até esse número</p>
+    <hr>
+    <script>
+        
+        let num = parseInt(prompt('Escolha um número:'))
+        let contador = 0
+        let inicial = 1
+ 
+        while (inicial <= num) {
+            if (inicial % 2 === 0) {
+                contador++
+            }
+            inicial ++
+        }
+        document.write(`Existem ${contador} números pares.`)
+
+    </script>
+
+</html>
