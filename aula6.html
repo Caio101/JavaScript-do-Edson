@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Aulas 6 - Funções de Evento</title>
+</head>
+
+<body>
+    <button id="btnAlerta">Mostrar alerta</button>
+    <p id="textoParagrafo">Texto Inicial</p>
+    <button id="TextoBotao">Alertar Texto</button>
+
+    <script>
+    const btnAlerta = document.getElementById('btnAlerta');
+    const textoParagrafo = document.getElementById('textoParagrafo');
+    const TextoBotao = document.getElementById('TextoBotao');
+
+    btnAlerta.addEventListener('click',function(){
+        alert("Botão de Alerta Clicado!")
+    })
+
+    textoParagrafo.addEventListener('click', function(){
+        textoParagrafo.textContent = "Mudou de Texto o Paragrafo"
+    })
+
+    TextoBotao.addEventListener('click', function(){
+        TextoBotao.textContent = "Mudado"
+    })
+
+
+
+    </script>
+
+</body>
